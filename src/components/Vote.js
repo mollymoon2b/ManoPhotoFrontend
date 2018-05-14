@@ -13,7 +13,7 @@ class Vote extends React.Component {
     }
 
     fetchAll() {
-        fetch('http://localhost:8000/images', {
+        fetch('https://powerful-tundra-37364.herokuapp.com/images', {
             method: 'GET',
         }).then((response) => {
             response.json().then((body) => {
@@ -52,7 +52,7 @@ class Vote extends React.Component {
                 data.append('firstVote', myCookie);
                 data.append('name', file.name);// eslint-disable-next-line
                 data.append('vote', this.state.files[index].vote);
-                fetch('http://localhost:8000/addVote', {
+                fetch('https://powerful-tundra-37364.herokuapp.com/addVote', {
                     method: 'POST',
                     body: data,
                 }).then((response) => {
@@ -78,7 +78,7 @@ class Vote extends React.Component {
                 {this.state.files.map(file => {
                     return (
                         <a href="" className={this.props.classes.voteLink} onClick={this.handleVoteImage}>
-                            <img className={this.props.classes.voteImg} src={'http://localhost:8000/public/' + file.name} alt={file.name} />
+                            <img className={this.props.classes.voteImg} src={'https://powerful-tundra-37364.herokuapp.com/public/' + file.name} alt={file.name} />
                             <span className={this.props.classes.voteText}>
                                 {file.vote} Votes
                             </span>

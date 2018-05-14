@@ -18,12 +18,12 @@ class UploadPhoto extends React.Component {
     data.append('file', this.uploadInput.files[0]);
     data.append('filename', `${name}${this.uploadInput.files[0].lastModified}`);
 
-    fetch('http://localhost:8000/upload', {
+    fetch('https://powerful-tundra-37364.herokuapp.com/upload', {
       method: 'POST',
       body: data,
     }).then((response) => {
       response.json().then((body) => {
-        this.setState({ imageURL: `http://localhost:8000/mano-photos/${body.file}` });
+        this.setState({ imageURL: `https://powerful-tundra-37364.herokuapp.com/mano-photos/${body.file}` });
       });
     });
   };
