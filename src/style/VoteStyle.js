@@ -1,7 +1,15 @@
 import colors from './../config/colors';
 
 const styles = {
-    vote: {
+    '@global': {
+        body: {
+            fontFamily: 'woodstock',
+            margin: 0,
+            padding: 0,
+            backgroundColor: colors.dark
+        }
+    },
+    logo : {
 
     },
     voteImg: {
@@ -9,21 +17,15 @@ const styles = {
         width: '100%'
     },
     voteLink: {
-        border: '2px solid ',
-        color: colors.text,
-        display: 'block',
-        margin: '30px 0px',
-        padding: '10px 10px 25px 10px',
-        textDecoration: 'none'
     },
     voteText: {
-        color: colors.text,
+        color: colors.white,
         display: 'block',
         textAlign: 'center',
         width: '100%'
     },
     voteTitle: {
-        color: colors.text,
+        color: colors.white,
         textAlign: 'center',
         textTransform: 'uppercase'
     }

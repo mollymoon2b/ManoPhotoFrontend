@@ -1,5 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import { render } from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const App = () => (
+    <form>
+        <input type="text" name="name"/>
+        <input type="submit" value="coucou"/>
+    </form>
+);
+
+render(<App />, document.getElementById("root"));

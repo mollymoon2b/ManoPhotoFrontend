@@ -1,0 +1,52 @@
+
+# from symfony-standard edition
+/app/config/parameters.yml
+/phpunit.xml
+/var/*
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+!/var/logs
+/var/logs/*
+!var/logs/.gitkeep
+!/var/private
+/var/private/*
+/vendor/
+/web/bundles/
+
+# IDE/editor specific
+.idea
+*.iml
+*.swp
+*.swo
+
+# Global
+/.env
+
+# Build specific
+/reports/
+
+# Front-end specific
+/app/config/front.yml
+/node_modules/
+/web/dist/
+/web/images/
+/web/files/*
+!/web/files/.gitkeep
+!/web/files/attachments
+/web/files/attachments/*
+!web/files/attachments/.gitkeep
+npm-debug.log
+yarn-error.log
+
+# Back-end specific
+
+/composer.phar
+/files/*
+!/files/.gitkeep
+/src/AppBundle/Resources/translations/*
+!/src/AppBundle/Resources/translations/.gitkeep
+
+/.php_cs
+/.php_cs.cache
+

@@ -1,34 +1,38 @@
 import colors from './../config/colors';
 
 const styles = {
-    home: {
-        background: colors.pink,
-        height: '100%'
+    '@global': {
+        body: {
+            margin: 0,
+            padding: 0,
+            backgroundColor: colors.dark
+        }
     },
     home__logo: {
-        height: '50px',
-        width: '50px'
+        paddingTop: 25
     },
-    home__links: {
-        display: 'flex',
-        justifyContent: 'space-around',
-        width: '100%'
+    home__logoImage: {
+        width: '100%',
+        height: '34vh',
+        margin: '0 auto'
     },
     home__linkWrapper: {
-        backgroundColor: 'white',
-        borderRadius: '3px',
-        display: 'table',
-        marginBottom: '50px',
-        height: '100px',
-        width: '100px'
+        textAlign: 'center',
+        border: 'solid 1px',
+        borderRadius: 8,
+        borderColor: colors.brownMid,
+        width: '80%',
+        backgroundColor: colors.brownLight,
+        margin: '10px auto'
     },
     home__link: {
-        color: colors.text,
-        display: 'table-cell',
-        textAlign: 'center',
+        color: colors.white,
         textDecoration: 'none',
-        verticalAlign: 'middle',
-        width: '100%'
+        display: 'block',
+        padding: 20
+    },
+    home_input: {
+        display: 'none'
     }
 };
 

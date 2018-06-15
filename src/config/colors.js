@@ -1,9 +1,11 @@
 const colors = {
-    pink: '#c9337a',
-    pinkDark: '#60175c',
-    text: '#341b39',
-    blue: '#8ab7cc',
-    blueDark: '#295b8c'
+    brownUltraLight: '#F3816F',
+    brownLight: '#E5615B',
+    brownMid: '#C05B5B',
+    brown: '#AA5050',
+    brownDark: '#934444',
+    dark: '#2A333C',
+    white: '#ffffff',
 };
 
 export default colors;
